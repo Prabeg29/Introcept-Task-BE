@@ -6,11 +6,11 @@ This repository consists of task mentioned in https://github.com/IntroCept/Task-
 1. [Git](https://git-scm.com/)
 2. [Composer](https://getcomposer.org/)
 3. Apache, Mysql and Php
-   <h2>Linux</h2><br>
-   [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
-   <h2>Mac</h2><br>
-   [MAMP](https://www.mamp.info/en/)
-   <h2>Windows</h2>
+   <h3>Linux</h3><br>
+   [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04)
+   <h3>Mac</h3><br>
+   [MAMP](http://progsharing.blogspot.com/2018/07/install-mamp-mac-apache-mysql-php-stack.html)
+   <h3>Windows</h3  >
    [WAMP](http://www.wampserver.com/en/)
    [XAMP](https://www.apachefriends.org/index.html)
 
