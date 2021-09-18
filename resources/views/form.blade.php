@@ -12,10 +12,10 @@
     <div class="container">
         <h2>Form</h2>
 
-        <!-- Success message -->
-        @if(Session::has('success'))
+        <!-- Flash message -->
+        @if(session('success'))
             <div class="alert alert-success">
-                {{Session::get('success')}}
+                {{session('success')}}
             </div>
         @endif
         <form action="{{ route('form.submit') }}" method="POST">
@@ -23,7 +23,6 @@
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" name="name" placeholder="Enter your name" value="{{old('name')}}">
-
                 <!-- Error -->
                 @if ($errors->has('name'))
                     <div>
@@ -59,19 +58,19 @@
             <div class="mb-3">
                 <label for="name" class="form-label">Gender: </label>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="male" checked>
                     <label class="form-check-label" for="flexRadioDefault1">
                         Male
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="female">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Female
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="others">
                     <label class="form-check-label" for="flexRadioDefault1">
                         Others
                     </label>
@@ -80,21 +79,20 @@
 
             <div class="mb-3">
                 <label for="name">Hobbies: </label>
-
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="reading" id="flexCheckDefault" name="hobby1">
                     <label class="form-check-label" for="flexCheckDefault">
                         Reading
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="travelling" id="flexCheckChecked" name="hobby2">
                     <label class="form-check-label" for="flexCheckChecked">
                         Travelling
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="listening to music" id="flexCheckChecked" name="hobby3">
                     <label class="form-check-label" for="flexCheckChecked">
                         Listening to music
                     </label>
