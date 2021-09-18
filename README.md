@@ -17,5 +17,6 @@ This repository consists of task mentioned in https://github.com/IntroCept/Task-
 # Usage
 
 1. Clone the repository using : <h2>$ git clone {Repository_url}</h2>
-2. Run : <h2>$ php artisan serve</h2><br>
+2. Create a copy of .env.example and save as .env in the root folder.
+3. Run : <h2>$ php artisan serve</h2><br>
    You can now browse to http://localhost:8000 directly in your browser
