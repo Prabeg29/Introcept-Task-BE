@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('form', [FormController::class, 'index']);
-Route::post('form', [FormController::class, 'submit']);
+Route::post('form', [FormController::class, 'submit'])->name('form.submit');
 
 Route::get('/', function () {
     return view('welcome');
