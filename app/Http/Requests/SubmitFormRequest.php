@@ -47,7 +47,7 @@ class SubmitFormRequest extends FormRequest
             'email.email' => 'Please enter email in a valid format.',
             'email.max' => 'Please enter less than 255 characters.',
             'phone.required' => 'Please enter your phone number.',
-            'phone.digits' => 'Please enter a valid phone number'
+            'phone.digits' => 'Please enter a valid phone number of 10 digits'
         ];
     }
 }
